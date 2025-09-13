@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CCE-construccionesconestilo</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <div class="logo">
+      <div class="logo-circle">
+        <img src="img/logopric.png" alt="Logo CCE" class="logo-img">
+      </div>
+      <span class="logo-text">CCE Construcciones Con Estilo</span>
+    </div>
+
+    <button class="menu-toggle" onclick="toggleMenu()">&#9776;</button>
+    <ul id="menu">
+      <li><a href="#">Inicio</a></li>
+      <li><a href="#">Servicios</a></li>
+      <li><a href="#">Contacto</a></li>
+      <li class="login-item">
+        <button class="login-btn"> 
+          <a href="Login/login.html"><span class="icon">🔑</span> Login</a>
+        </button>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- CARRUSEL -->
+  <div class="carousel">
+    <img src="img/foto1.jpg" class="active" alt="Imagen 1">
+    <img src="img/foto2.jpg" alt="Imagen 2">
+    <img src="img/foto3.jpg" alt="Imagen 3">
+    
+    <div class="buttons">
+      <button onclick="prev()">&#10094;</button>
+      <button onclick="next()">&#10095;</button>
+    </div>
+  </div>
+
+  <!-- GRID DE CUADRADOS -->
+  <section class="grid-section">
+    <div class="grid-container">
+      <div class="grid-item"><img src="img/foto1.jpg" alt="Cuadro 1"></div>
+      <div class="grid-item"><img src="img/foto2.jpg" alt="Cuadro 2"></div>
+      <div class="grid-item"><img src="img/foto3.jpg" alt="Cuadro 3"></div>
+      <div class="grid-item"><img src="img/foto1.jpg" alt="Cuadro 4"></div>
+      <div class="grid-item"><img src="img/foto2.jpg" alt="Cuadro 5"></div>
+      <div class="grid-item"><img src="img/foto3.jpg" alt="Cuadro 6"></div>
+      <div class="grid-item"><img src="img/foto1.jpg" alt="Cuadro 7"></div>
+      <div class="grid-item"><img src="img/foto2.jpg" alt="Cuadro 8"></div>
+      <div class="grid-item"><img src="img/foto3.jpg" alt="Cuadro 9"></div>
+      <div class="grid-item"><img src="img/foto1.jpg" alt="Cuadro 10"></div>
+      <div class="grid-item"><img src="img/foto2.jpg" alt="Cuadro 11"></div>
+      <div class="grid-item"><img src="img/foto3.jpg" alt="Cuadro 12"></div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2025 Mi Página Básica - Todos los derechos reservados</p>
+  </footer>
+
+  <script src="js/script1.js"></script>
+</body>
+</html>

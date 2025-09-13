@@ -1,0 +1,198 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* NAVBAR */
+nav {
+  background-color: #333;
+  color: white;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  position: sticky; /* 👈 se pega arriba cuando scrolleás */
+  top: 0;
+  z-index: 1000;
+}
+
+/* Aquí reemplazamos la regla nav .logo para hacer un flex container con logo circular + texto */
+nav .logo {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: 1.2rem;
+  gap: 10px; /* espacio entre círculo y texto */
+  color: white; /* por si acaso */
+}
+
+/* Círculo blanco para la imagen del logo */
+nav .logo-circle {
+  background-color: white;
+  border-radius: 50%;
+  padding: 5px; /* espacio alrededor de la imagen */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;  /* tamaño del círculo */
+  height: 40px; /* tamaño del círculo */
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+}
+
+/* Imagen dentro del círculo */
+nav .logo-img {
+  width: 40px;  /* tamaño de la imagen */
+  height: 40px;
+  object-fit: contain;
+  border-radius: 50%; /* opcional para que la imagen sea redonda */
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Botón hamburguesa */
+.menu-toggle {
+  display: none;
+  font-size: 24px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+/* Botón Login */
+.login-btn {
+  background-color: #ff9800;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.login-btn:hover {
+  background-color: #e68900;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  nav ul {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 15px;
+    background-color: #333;
+    padding: 10px;
+    border-radius: 8px;
+    width: 200px;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+
+  nav ul.show {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  /* Login que siempre queda al final */
+  .login-item {
+    margin-top: auto;
+  }
+}
+
+/* CARRUSEL */
+.carousel {
+  position: relative;
+  max-width: 800px;
+  margin: 30px auto;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+.carousel img {
+  width: 100%;
+  display: none;
+}
+.carousel img.active {
+  display: block;
+}
+
+.buttons {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+}
+.buttons button {
+  background: rgba(0,0,0,0.5);
+  border: none;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 18px;
+  border-radius: 5px;
+}
+
+/* GRID 3x4 */
+.grid-section {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 20px;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+.grid-item {
+  background-color: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+}
+.grid-item:hover {
+  transform: scale(1.05);
+}
+.grid-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+  border-radius: 12px;
+}
+
+/* FOOTER */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 30px;
+}
