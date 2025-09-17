@@ -208,3 +208,17 @@ body{
 .container.active .toggle-right{
     transform: translateX(200%);
 }
+/* Forzar el formulario de registro a mostrarse cuando está en página separada */
+.sign-up {
+    left: 0;
+    width: 100% !important;
+    opacity: 1 !important;
+    z-index: 5 !important;
+    position: relative; /* para que no quede absolute y desaparezca */
+}
+.sign-in {
+    left: 0;
+    width: 100% !important;
+    z-index: 5 !important;
+    position: relative;
+}

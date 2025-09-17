@@ -6,33 +6,32 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
   <link rel="stylesheet" href="../css/login-style.css">
-  <title>CCE - Iniciar Sesión</title>
+  <title>CCE - Registrarse</title>
 </head>
 
 <body>
   <div class="container">
-    <!-- LOGIN -->
-    <div class="form-container sign-in" style="width:100%">
-      <form id="login-form">
-        <h1>Iniciar Sesión</h1>
+    <!-- REGISTER -->
+    <div class="form-container sign-up" style="width:100%">
+      <form id="signup-form">
+        <h1>Crear Cuenta</h1>
         <div class="social-icons">
           <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
           <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
           <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
           <a href="#" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
         </div>
-        <span>Usa tu correo y contraseña</span>
-        <input type="email" id="login-email" placeholder="Correo Electrónico" required>
-        <input type="password" id="login-password" placeholder="Contraseña" required>
-        <a href="#">¿Olvidaste tu contraseña?</a>
-        <button type="submit" href="../index.html">Iniciar Sesión</button>
-        <p>¿No estas registrado?<a href="registro.html"> Registrate</a></p>
+        <span>Usa tu correo para registrarte</span>
+        <input type="email" id="signup-email" placeholder="Correo Electrónico" required>
+        <input type="password" id="signup-password" placeholder="Contraseña" required>
+        <button type="submit">Registrarse</button>
+         <p>¿Ya estas registrado?<a href="login.html"> Inicia Sesion</a></p>
       </form>
     </div>
   </div>
 
   <!-- Scripts -->
-  <script src="../js/login.js" type="module"></script>
+  <script src="../js/registro.js" type="module"></script>
 </body>
 
 </html>
